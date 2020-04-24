@@ -22,6 +22,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
+Route::group(['prefix'=>'backend','namespace'=>'Backend'],function(){
+    Route::get('/dashboard','DashboardController');
+});
 
 Route::resource('admin/user','admin\AdminUserController');
