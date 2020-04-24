@@ -24,7 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix'=>'backend','namespace'=>'Backend'],function(){
     Route::get('/dashboard','DashboardController');
-//    todo add template
+//    todo add template,datatable
 });
 
 Route::resource('admin/user','admin\AdminUserController');
