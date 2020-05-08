@@ -1,2 +1,2 @@
-<?php
-{{--todo : title tags--}}
+
+<title>@yield('')</title>
