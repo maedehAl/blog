@@ -28,5 +28,6 @@
     <link rel="stylesheet" href="{{asset('dist/css/bootstrap-rtl.min.css')}}">
     <!-- template rtl version -->
     <link rel="stylesheet" href="{{asset('dist/css/custom-style.css')}}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
 
 </head>

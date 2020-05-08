@@ -142,6 +142,7 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
@@ -178,5 +179,12 @@
 <script src="{{asset('dist/js/pages/dashboard.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('dist/js/demo.js')}}"></script>
+<script src="{{ mix('js/app.js') }}"></script>
+<script src="{{ asset('js/datatable/Buttons/js/dataTables.buttons.min.js') }}"></script>
+<script src="{{ asset('js/datatable/Buttons/js/buttons.html5.min.js') }}"></script>
+<script src="{{ asset('vendor/datatables/buttons.server-side.js') }}"></script>
+<script src="{{ asset('js/datatables.min.js') }}"></script>
+
+@stack('scripts')
 </body>
 </html>
