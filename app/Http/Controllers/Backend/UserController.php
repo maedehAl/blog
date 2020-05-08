@@ -2,19 +2,24 @@
 
 namespace App\Http\Controllers\Backend;
 
+use App\DataTables\UserDataTable;
 use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Http\Request;
+use Yajra\DataTables\Services\DataTable;
 
 class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
+     * @param DataTable $dataTable
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index()
+    public function index(UserDataTable $dataTable)
     {
-        return view('backend.user.index');
+//        dd(User::all());
+        return $dataTable->render('backend.user.index');
     }
 
     /**
